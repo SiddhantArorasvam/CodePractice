@@ -1,7 +1,7 @@
 public class Question28 {
     
     public static void main(String[] args) {
-        
+     //lastwordsize
         String s = "This is Siddhant ";
         System.out.println(Wordsize(s));
     }
