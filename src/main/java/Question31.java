@@ -12,29 +12,26 @@ public class Question31 {
 
     public static int[] Shuffle(int[] arr){
 
-
-
         int index = 0;
-
         for (int num :arr){
 
-            if (num !=0){
+            if (num != 0){
 
                 arr[index] = num;
                 index++;
             }
 
-
-
         }
         while (index < arr.length){
 
-            arr[index] =0;
+            arr[index] = 0;
             index++;
         }
 
         return arr;
     }
+
+
 
 
 }
