@@ -7,19 +7,36 @@ public class Question7 {
         System.out.println(min(new int[] {3, 4})); // 3
         System.out.println(min(new int[] {100})); // 100
     }
-    
+
     public static int min(int[] arr){
-        
+
         int min = arr[0];
-        
-        for (int number : arr){
-            
-            if(min > number){
-                
-                min = number;
+
+        for (int num :arr){
+
+            if(num < min){
+
+                min = num;
             }
         }
-        
         return min;
+
     }
+    
+
 }
+
+//public static int min(int[] arr){
+//
+//    int min = arr[0];
+//
+//    for (int number : arr){
+//
+//        if(min > number){
+//
+//            min = number;
+//        }
+//    }
+//
+//    return min;
+//}

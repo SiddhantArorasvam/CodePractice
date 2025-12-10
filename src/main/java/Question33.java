@@ -2,6 +2,7 @@ public class Question33 {
 
     public static void main(String[] args) {
 
+
         String s = "this12is22java5interview";
         //o/p -> interview java is this
 

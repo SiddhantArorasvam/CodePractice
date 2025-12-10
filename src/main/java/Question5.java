@@ -5,27 +5,28 @@ public class Question5 {
         
         //Check Number Palindrome
         
-        System.out.println(IsNumberPalindrome(2012));
+        System.out.println(IsNumberPalindrome(2002));
         
     }
-    
-    public static Boolean IsNumberPalindrome(int num) {
-    
-    int copy = num;
-    int remainder;
-    int reversenumber = 0;
-    
-    while (num >0){
-        
-        remainder = num%10;
-        reversenumber = (reversenumber*10) + remainder;
-        num = num/10;
-        
+
+    public static Boolean IsNumberPalindrome(int num){
+
+        int remainder;
+        int copy = num;
+        int reversenum = 0;
+
+        while (num > 0){
+
+            remainder = num%10;
+            reversenum = reversenum * 10 + remainder;
+            num = num/10;
+
+        }
+
+        return copy == reversenum;
+
     }
-    
-    
-    return copy==reversenumber;
-    }
+
     
     
 }

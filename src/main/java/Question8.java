@@ -6,33 +6,29 @@ public class Question8 {
       
       
     }
-    
-    public static int SecondLargestNum(int[] arr){
-        
+
+    public static int SecondLargestNum(int[] arr) {
+
         int max = 0;
-        int secmax = 0;
-        
-        
-        
-        for (int num :arr){
-            
-            if (max < num){
-                
-                secmax = max;
+        int sec_max = 0;
+
+        for(int num :arr){
+
+            if (num > max){
+
+                sec_max = max;
                 max = num;
-                
-            } else if (secmax < num) {
-                
-                secmax = num;
             }
-            
+            else if (sec_max < num){
+
+                sec_max = num;
+            }
         }
-        
-        
-        return secmax;
+        return sec_max;
     }
-    
-    
+
     }
+
+
 
     

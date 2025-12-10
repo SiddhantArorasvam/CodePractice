@@ -6,22 +6,28 @@ public class Question2 {
         System.out.println(ReverseSentence(sentence));
         
     }
-    
-    public static String ReverseSentence(String sentence){
-        
+
+
+    public static String ReverseSentence(String str){
+
+        String[] arr = str.split(" ");
         StringBuilder sb = new StringBuilder();
-        String[] words = sentence.split(" ");
-        
-        for (int i = words.length -1; i >=0 ; i--) {
-            
-            sb.append(words[i]).append(" ");
-            
+
+        for (int i = arr.length -1;i>=0 ; i--){
+
+            sb.append(arr[i]).append(" ");
+
         }
-        
+
         return sb.toString().trim();
+
+
     }
     
-   
+
 }
+
+
+
 
 

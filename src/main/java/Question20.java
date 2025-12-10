@@ -7,36 +7,37 @@ public class Question20 {
         String  input = "12bas10bbb32as10";
         System.out.println(Sum(input));
     }
-    
-    public static int Sum(String input){
-        int sum = 0;
-        StringBuilder builder = new StringBuilder();
-        char[] arr = input.toCharArray();
-        
-        
-        for (char ch : arr){
-            if (Character.isDigit(ch)){
-                
-                builder.append(ch);
-                
+
+    public static int Sum(String str){
+
+        int sum=0;
+        StringBuilder sb = new StringBuilder();
+        char[] arr =str.toCharArray();
+
+        for (char val :arr){
+
+            if (Character.isDigit(val)){
+
+                sb.append(val);
+
             }
-            else {
-                
-                if (builder.length() >0){
-                    
-                    sum = sum + Integer.parseInt(builder.toString());
-                    builder.setLength(0);
-                }
-                
+            else if (sb.length() >0){
+
+                sum = sum + Integer.parseInt(sb.toString());
+                sb.setLength(0);
             }
-          
+
         }
-        if(builder.length()>0){
-           
-            sum = sum + Integer.parseInt(builder.toString());
-            
+        if(sb.length()>0){
+
+            sum = sum + Integer.parseInt(sb.toString());
         }
-        
+
         return sum;
     }
+
+
+
 }
+
+
